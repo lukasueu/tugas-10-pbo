@@ -60,6 +60,8 @@ public class Garden{
             System.out.println("There are " + nTanaman + " plant(s) in the garden");
             System.out.println("Your harvest point:" +hasilPanen);
             for (int i = 0; i < pArrList.size(); i++) {
+                System.out.println();
+                System.out.printf("Jenis: %s\n", pArrList.get(i).jenis);
                 pArrList.get(i).displayPlant();
             }
     }

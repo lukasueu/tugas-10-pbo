@@ -1,7 +1,7 @@
-public class Melati extends Plant { 
+public class Melati extends Plant implements IfacePlant {
     public Melati() {
         super();
-        jenis = "MELATI";
+        setJenis();
     }
 
     public void cekKondisiTumbuh() {
@@ -16,5 +16,9 @@ public class Melati extends Plant {
             setJumlahPupuk(getJumlahPupuk() - 1);
             setStatusTumbuh(getStatusTumbuh() + 1);
         }
-     }
+    }
+
+    public void setJenis() {
+        jenis = "MELATI";
+    }
 }

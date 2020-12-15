@@ -58,7 +58,7 @@ class Plant {
         //System.out.println(getStatusTumbuhText());
         System.out.format("|Jumlah Air | Jumlah Pupuk | Status Tumbuh |\n");
        // System.out.println();
-        System.out.format("|%-11d|%-14d|%-15s|%-9d|%-6d|", +jumlahAir, +jumlahPupuk, getStatusTumbuhText());
+        System.out.format("|%-11d|%-14d|%-15s|", +jumlahAir, +jumlahPupuk, getStatusTumbuhText());
         System.out.println();
     }
 
@@ -80,25 +80,25 @@ class Plant {
         return statusTumbuh;
     }
     
-    public String getImagePath() {
-        String tImagePath = "img/seed.png";
-        switch (statusTumbuh) {
-            case 0:
-                tImagePath = "img/seed.png";
-                break;
-            case 1:
-                tImagePath = "img/sprout.png";
-                break;
-            case 2:
-                tImagePath = "img/small.png";
-                break;
-            case 3:
-                tImagePath = "img/big.png";
-                break;
-            case 4:
-                tImagePath = "img/blossom.png";
-                break;
-        }
-        return tImagePath;
-    }
+    // public String getImagePath() {
+    //     String tImagePath = "img/seed.png";
+    //     switch (statusTumbuh) {
+    //         case 0:
+    //             tImagePath = "img/seed.png";
+    //             break;
+    //         case 1:
+    //             tImagePath = "img/sprout.png";
+    //             break;
+    //         case 2:
+    //             tImagePath = "img/small.png";
+    //             break;
+    //         case 3:
+    //             tImagePath = "img/big.png";
+    //             break;
+    //         case 4:
+    //             tImagePath = "img/blossom.png";
+    //             break;
+    //     }
+    //     return tImagePath;
+    // }
 }

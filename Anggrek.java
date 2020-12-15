@@ -1,7 +1,7 @@
-public class Anggrek extends Plant {
+public class Anggrek extends Plant implements IfacePlant {
     public Anggrek() {
         super();
-        jenis = "ANGGREK";
+        setJenis();
     }
 
     public void cekKondisiTumbuh() {
@@ -16,5 +16,9 @@ public class Anggrek extends Plant {
             setJumlahPupuk(getJumlahPupuk() - 2);
             setStatusTumbuh(getStatusTumbuh() + 1);
         }
-     }
+    }
+
+    public void setJenis() {
+            jenis = "ANGGREK";
+    }
 }

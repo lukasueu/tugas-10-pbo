@@ -1,7 +1,7 @@
-public class Mawar extends Plant {    
+public class Mawar extends Plant implements IfacePlant {
     public Mawar() {
         super();
-        jenis = "MAWAR";
+        setJenis();
     }
 
     public void cekKondisiTumbuh() {
@@ -16,5 +16,9 @@ public class Mawar extends Plant {
             setJumlahPupuk(getJumlahPupuk() - 2);
             setStatusTumbuh(getStatusTumbuh() + 1);
         }
-     }
+    }
+
+    public void setJenis() {
+        jenis = "MAWAR";
+    }
 }
